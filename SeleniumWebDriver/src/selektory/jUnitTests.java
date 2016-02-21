@@ -7,7 +7,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class jUnitTests {
 	WebDriver driver;
@@ -23,7 +22,8 @@ public class jUnitTests {
 		googleMainPage = new GoogleMainPage(driver);
 	}
 	
-	// Po każdym teście poniższe instrukcje są wykonywane
+	// Po każdym teście poniższe instrukcje są wykonywane, czeka 3 sekundy przez zamknięciem przeglądarki, aby można było
+	// zobaczyć efekt
 	@After
 	public void cleanUp() {
 		try {
