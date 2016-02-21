@@ -1,4 +1,4 @@
-package selektory;
+package pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,32 +11,32 @@ public class GoogleMainPage {
 	}
 	
 	// Lokalizacja paska wyszukiwania za pomocą ID
-	By googlSearchBarByIdLocator = By.id("lst-ib");
+	public By googlSearchBarByIdLocator = By.id("lst-ib");
 	
 	// Lokalizacja paska wyszukiwania za pomocą wyrażenia xpath 
 	// (przykład działania, jednak nie zadziała w innej wersji niż PL)
 	// można jednak pomyśleć o stworzeniu xpatha, który nie będzie miał tego ograniczenia
-	By googleSearchBarByXpathLocator = By.xpath("//div/input[@aria-label='Szukaj']");
+	public By googleSearchBarByXpathLocator = By.xpath("//div/input[@aria-label='Szukaj']");
 	
 	// Lokalizacja paska wyszukiwania za pomocą selektora CSS
-	By googleSearchBarByCssLocator = By.cssSelector("input.gsfi[type='text']");
+	public By googleSearchBarByCssLocator = By.cssSelector("input.gsfi[type='text']");
 	
 	// Lokalizacja linku do gmaila za pomocą nazwy
-	By googleGmailLinkByLinkTextLocator = By.linkText("Gmail");
+	public By googleGmailLinkByLinkTextLocator = By.linkText("Gmail");
 	
 	// Lokalizacja linku do Grafika za pomocą części nazwy
-	By googleGrafikaLinkByPartialTextLocator = By.partialLinkText("Graf");
+	public By googleGrafikaLinkByPartialTextLocator = By.partialLinkText("Graf");
 	
 	// Lokalizacja paska wyszukiwania za pomocą atrybutu 'name', ale rzadko stosowana, ponieważ często elementy
 	// nie mają tego atrybutu
-	By googleSearchBarByNameLocator = By.name("q");
+	public By googleSearchBarByNameLocator = By.name("q");
 	
 	// Lokalizacja przycisku wyświetlającego googleApps za pomocą wartości atrybutu class elementów
-	By googleAppsButtonByClassAttributeValueLocator = By.className("gb_Nb");
+	public By googleAppsButtonByClassAttributeValueLocator = By.className("gb_Nb");
 	
 	// Lokalizaca elementu za pomocą nazwy tagu (jednak przy dynamicznych stronach
 	// często jest wiele tagów o tej samej nazwie)
-	By bodyOfThePageByTagNameLocator = By.tagName("body");
+	public By bodyOfThePageByTagNameLocator = By.tagName("body");
 	
 	// Poniżej metody obsługujące znalezione elementy
 	
